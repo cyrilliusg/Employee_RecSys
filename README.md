@@ -38,10 +38,11 @@ Approaches to solving the task:
 	To satisfy the simplicity requirements, we are going to try TF-IDF, pre-trained embeddings, and simple classificators such as Logistic Regression of Support Vector Machine. As a preprocessing pipline, we are going to try stemming, lemmatization, and a custom function that is going to remove all the trash (uninformative words) from the object's description.
 
 
-There are different ways to make a problem statement:
+Ways to make a problem statement
+	There are different ways to make a problem statement:
 	1) The most obvious and trivial is to make a one-step classification task where position codes are used as classes.
 	This statement will have bad accuracy because of the >1600 classes.
 	2)Step-by-step classification. The first and main task is to determine func_1 (80 classes).
 	When we know the func_1 class, we are free to choose what we are going to predict on the next stage.
-		2.1) It could be func_2 level or func_3 level.
-		2.2) It could be position code classes.
+	2.1) It could be func_2 level or func_3 level.
+	2.2) It could be position code classes.
