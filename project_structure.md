@@ -6,19 +6,19 @@
 Employee_RecSys/
 │
 ├── data/
-│   ├── raw/                         # Исходные данные
-│   │   ├── catalogue.csv            # Эталонный каталог должностей
-│   │   └── training/                # Тренировочные данные
-│   │       ├── raw/                 # Сырые выборки
-│   │       └── processed/           # Предобработанные данные для обучения
-│   │           ├── stemmed_data/    # Предобработка стэммингом
-│   │           └── ...              # Другие методы
+│   ├── raw/                         # Initial data
+│   │   ├── catalogue.csv            # Source company's catalogue
+│   │   └── training/                # Train data
+│   │       ├── raw/                 # Raw data
+│   │       └── processed/           # Preprocessed data
+│   │           ├── stemmed_data/    # Stemmed data
+│   │           └── ...              # Other methods
 │   │
-├── apps/                            # Словари и данные для их подготовки
-│   ├── dictionary_creator/          # Приложение для создания словаря
-│   │   ├── source/                  # Исходный код приложения
-│   │   └── db/                      # База данных приложения
+├── apps/                            # Dictionaries and their data
+│   ├── dictionary_creator/          # Dict creating application
+│   │   ├── source/                  # Initial app code
+│   │   └── db/                      # App's database
 │
-└── interface/                       # Интерфейс
-    └──  source/                     # Исходный код интерфейса (PyQt6)
+└── interface/                       # Interface
+    └──  source/                     # Initial interface code (PyQt6)
 ```
